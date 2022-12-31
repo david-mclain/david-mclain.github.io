@@ -1,0 +1,39 @@
+.projects {
+	width : 60%;
+	color : #fff;
+	position : relative;
+	margin-left : 100px;
+}
+
+.projects h1 {
+	font-size : 35px;
+	text-align : left;
+}
+
+.projects hr {
+	margin : auto:
+	width : 60%;
+}
+
+.projects p {
+	margin : 5px 0 5px;
+	font-size : 20px;
+	text-align : left;
+}
+
+.location {
+	color : #fff;
+	position : relative;
+	margin-left : 100px;
+}
+
+.location hr {
+	position : relative;
+	width : 40%;
+}
+
+.location p {
+	margin : 30px 0 5px;
+	font-size : 25px;
+	text-align : left;
+}

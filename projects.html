@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" content="with=device-width, initial-scale=1.0"></meta>
+	<title>David McLain - Projects</title>
+	<link rel="shortcut icon" href="bin/logo_64x64.png"></link>
+	<link rel="stylesheet" href="index.css"></link>
+	<link rel="stylesheet" href="projects.css"></link>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="main">
+		<!--nav bar items-->
+		<nav>
+			<a href="index.html"><img src="bin/logo_128x128.png"></img></a>
+			<!--Redirect links-->
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="bin/resume.pdf">RESUME</a></li>
+					<li><a href="https://www.github.com/david-mclain">GITHUB</a></li>
+					<li><a href="https://www.linkedin.com/in/david-mclain-5669251b5/">LINKEDIN</a></li>
+					<li><a href="mailto:davidmclain@arizona.edu">CONTACT</a></li>
+					<li><a href="projects.html">PROJECTS</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="projects">
+			<h1>REST API – Fall 2021</h1>
+			<hr>
+			<p>
+				Designed a REST API that would access a MySQL database containing information about servers running for clients, 
+				then display JSON with that information. Website contained cgi script such that when a POST request was recieved, 
+				a new AWS ec2 instance would be instantiated for client, which would then run bash script to install everything necessary to start a Minecraft server.
+				Server would then be added to the database and be displayed in the API. Scripting for API was done in python and javascript.
+			</p>
+			<h1>Chess Game – Fall 2022</h1>
+			<hr>
+			<p>
+				Managed a team of four in coordinating sprint meet times and work distribution for developing a GUI based Chess Game.
+				Developed in Java using many different Object-Oriented Programming Principles and software development design patterns.
+				Game processed user inputs by mouse and used sockets to communicate to a server for an online game. 
+				Implemented in Java using Swing and AWT libraries.
+			</p>
+			<h1>What You See is What You Get Text Editor – Fall 2022</h1>
+			<hr>
+			<p>
+				Produced a GUI based text editor with partner doing pair programming. Editor allowed for image, shape and character insertion and deletion
+				by using composite design pattern and storing all data as glyphs. Text editor contained a spell checker, such that when a word was entered, 
+				if not in the dictionary, it would highlight red underneath to display to user it was mispelled. Implemented in Java using Swing and AWT libraries.
+			</p>
+			<h1>MIPS Single-Cycle CPU Simulation – Fall 2022</h1>
+			<hr>
+			<p>
+				Coded a 32-bit single-cycle CPU simulation using MIPS instruction set. Allows most basic instructions (e.g beq, add, etc...) to be executed. 
+				Implemented in C using functional programming.
+			</p>
+			<h1>Sorting Algorithm Visualizer</h1>
+			<hr>
+			<p>
+				Developed a sorting algorithm visualizer, which displayed bars representing array values. Depending on which sorting algorithm was picked by the user, 
+				the visualizer would then display the order in which comparisons and swaps are done. You can find that <a href="SortingVisualization.html">here</a>.
+			</p>
+		</div>
+		<div class="location">
+			<p>You can find the source code to all of my projects on my <a href="https://github.com/david-mclain">github.</a></p>
+			<hr>
+		</div>
+	</section>
+</body>
+</html>

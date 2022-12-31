@@ -1,0 +1,109 @@
+* {
+	margin : 0;
+	padding : 0;
+	font-family: 'Noto Serif', serif;
+}
+
+.main {
+	min-height : 100vh;
+	width: 100%;
+	position : relative;
+}
+
+nav {
+	display : flex;
+	padding : 2% 6%;
+	justify-content : space-between;
+	align-items : center;
+}
+
+nav img {
+	width : 128px;
+	height : 128px;
+}
+
+.nav-links {
+	flex : 1;
+	text-align : right;
+}
+
+.nav-links ul li {
+	list-style : none;
+	display : inline-block;
+	padding : 8px 12px;
+	position : relative;
+}
+
+.nav-links ul li a {
+	color : #fff;
+	text-decoration : none;
+	font-size : 20px;
+}
+
+.nav-links ul li::after {
+	content : '';
+	width : 0;
+	height : 3px;
+	background : #02ced1;
+	display : block;
+	margin : auto;
+	transition : 0.5s;
+}
+
+.nav-links ul li:hover::after  {
+	width : 100%;
+}
+
+.text-box {
+	width : 75%;
+	color : #fff;
+	position : relative;
+	bottom : -50px;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.text-box h1 {
+	font-size : 40px;
+	text-align : center;
+}
+
+.text-box hr {
+	margin : auto;
+	width : 40%;
+}
+
+.text-box p {
+	margin : 10px 0 40px;
+	font-size : 25px;
+	text-align : left;
+}
+
+.text-box br {
+	display : block;
+	content : '';
+	margin-top : 10px;
+}
+
+.extra-links {
+	display : grid;
+	grid-template-columns : repeat(auto-fit, minmax(64px, 1fr));
+	gap : 18px;
+	margin-left : auto;
+	margin-right : auto;
+	bottom : -75px;
+	position : relative;
+	width : 50%;
+}
+
+.extra-links a {
+	display : flex;
+	flex : 25%;
+	justify-content : center;
+	align-items : center;
+	padding : 5px;
+}
+
+body {
+	background : #1c1c1e;
+}
