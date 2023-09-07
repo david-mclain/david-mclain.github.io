@@ -1,0 +1,230 @@
+\documentclass[10pt]{book}
+
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage{tabularx}
+
+\setstretch{1.2}
+\newgeometry{left=0.5in, right=0.5in, top=0.5in, bottom=0.5in}
+
+\author{David McLain}
+
+\begin{document}
+    {
+        \fontfamily{ptm}
+        \selectfont
+        \pagenumbering{gobble}
+        % Header for resume
+        {\centering
+            % Name
+            {
+                \fontsize{13}{13}
+                \selectfont David McLain
+                \\
+            }
+            % Email, portfolio, linkedin
+            {
+                \fontsize{12}{12}
+                \selectfont
+                \href{mailto:davidmclain@arizona.edu}{davidmclain@arizona.edu}
+                \\
+                \href{http://davidm.codes}{http://davidm.codes}
+                \hspace{1pt}\textbar\hspace{1pt}
+                \href{https://www.linkedin.com/in/mclain-david}{https://www.linkedin.com/in/mclain-david}
+                \\
+            }
+        }
+        % Education Section
+        % Header for Education
+        \begin{spacing}{0.2}
+            \noindent\fontsize{12}{12}
+            \selectfont\hspace{-3pt}\textbf{EDUCATION}
+            \\
+            \rule{\linewidth}{0.4pt}
+            \\
+            \\
+            \\
+            \\
+        \end{spacing}
+        % School Name with Major (UofA)
+        {
+            \fontsize{11}{11}
+            \selectfont
+            \noindent\textbf{University of Arizona}\hfill Tucson, Arizona
+            \\
+            \textbf{\textit{Bachelor of Science, Computer Science}}\hfill May 2021\hspace{3pt}\textendash\hspace{3pt}Present
+            \\
+        }
+        % Achievements
+        \textit{Minor in Mathematics}
+        \\
+        \hspace{2pt}-\hspace{6pt}GPA: 3.6 / 4.0
+        \\
+        \hspace{2pt}-\hspace{6pt}ASEMS NSF Grant Scholarship
+        \\
+        % School Name with Major (Pima)
+        {
+            \fontsize{11}{11}
+            \selectfont
+            \noindent\textbf{Pima Community College}\hfill Tucson, Arizona
+            \\
+            \textbf{\textit{Pre-Engineering}}\hfill August 2019\hspace{3pt}\textendash\hspace{3pt}May 2021
+            \\
+        }
+        \vspace{-\baselineskip}\vspace{-\parskip}
+        % Skills Section
+        % Header for Skills
+        \begin{spacing}{0.2}
+            {
+                \noindent\fontsize{12}{12}
+                \\
+                \\
+                \selectfont\textbf{TECHNICAL SKILLS}
+                \\
+            }
+            \rule{\linewidth}{0.4pt}
+            \\
+            \\
+            \\
+            \\
+        \end{spacing}
+        % Skills here
+        \noindent
+        Programming Languages: Java; Python; C\#; C; MIPS; SQL; Bash; HTML; CSS
+        \\
+        Operating Systems: Linux; Unix; Windows
+        \\
+        Software and Libraries: Git; Vim; Lucene; Pandas; NumPy; Make
+        % Projects Section
+        % Header for Projects
+        \begin{spacing}{0.2}
+            {
+                \noindent\fontsize{12}{12}
+                \\
+                \\
+                \selectfont\textbf{PROJECTS}
+                \\
+            }
+            \rule{\linewidth}{0.4pt}
+            \\
+            \\
+            \\
+            \\
+        \end{spacing}
+        % MiniWatson
+        {
+            \noindent\fontsize{11}{11}
+            \selectfont\hspace{-3pt}\textbf{Mini Watson \textendash}\hfill Spring 2023
+        }
+        \\
+        \hspace{2pt}-\hspace{6pt}Led a team of 5 developers in the creation of a software application that acted as a simplified version of IBM's Watson Question Answering machine.
+        \\
+        \hspace{2pt}-\hspace{6pt}Developed the application using Java, and integrated OpenNLP and Lucene frameworks to implement a bag of words and probabilistic model for searching 
+                                indexed Wikipedia documents.
+        \\
+        \hspace{2pt}-\hspace{6pt}Coordinated with team members to design and implement an algorithm that indexed relevant Wikipedia documents and extracted necessary information using natural 
+                                language processing techniques.
+        \\
+        % Chess
+        {
+            \noindent\fontsize{11}{11}
+            \selectfont\hspace{-3pt}\textbf{Chess Game \textendash}\hfill Fall 2022
+        }
+        \\
+        \hspace{2pt}-\hspace{6pt}Managed a team of 4 developers in the development of a GUI-based chess application using Java's Swing and AWT libraries, which included features such 
+                                as online gameplay, saving and loading games, and a competitive mode.
+        \\
+        \hspace{2pt}-\hspace{6pt}Implemented agile development methodologies to ensure efficient and flexible project management, including regular team meetings, task prioritization, 
+                                and continuous integration and deployment.
+        \\
+        \hspace{2pt}-\hspace{6pt}Utilized object-oriented design patterns such as the Model-View-Controller (MVC) pattern to develop a modular, scalable, and user-friendly interface 
+                                using Java's Swing and AWT libraries for a GUI-based chess application.
+        \\
+        % Sorting Algorithm Visualizer
+        {
+            \noindent\fontsize{11}{11}
+            \selectfont\hspace{-3pt}\textbf{Sorting Algorithm Visualizer \textendash}\hfill Winter 2022
+        }
+        \\
+        \hspace{2pt}-\hspace{6pt}Designed and implemented a sorting algorithm visualizer using Javascript, HTML, and CSS to showcase the functionality of merge sort, quicksort, and 
+                                heapsort algorithms.
+        \\
+        \hspace{2pt}-\hspace{6pt}Used HTML and CSS to create an engaging and user-friendly interface that displayed the array of numbers and highlighted the current step in the sorting process.
+        \\
+        \hspace{2pt}-\hspace{6pt}Demonstrated proficiency in software development, algorithm design, and web development by delivering a high-quality project that received positive 
+                                feedback from users.
+        \iffalse
+        \\
+        % Text Editor
+        {
+            \noindent\fontsize{11}{11}
+            \selectfont\hspace{-3pt}\textbf{Text Editor \textendash}\hfill Fall 2022
+        }
+        \\
+        \hspace{2pt}-\hspace{6pt}Collaborated with partner in developing a What You See is What You Get text editor
+        \\
+        \hspace{2pt}-\hspace{6pt}Used object-oriented design patterns such as the composite design pattern to better calculate positions of glyphs entered by user
+        \\
+        \hspace{2pt}-\hspace{6pt}Featured spell checker, image/shape insertion and undo/redo functionality
+        \\
+        \hspace{2pt}-\hspace{6pt}Implemented in Java using Swing and AWT frameworks
+        \fi
+        % Experience Section
+        % Header for Experience
+        \begin{spacing}{0.2}
+            {
+                \noindent\fontsize{12}{12}
+                \\
+                \\
+                \selectfont\textbf{RELEVANT EXPERIENCE}
+                \\
+            }
+            \rule{\linewidth}{0.4pt}
+            \\
+            \\
+            \\
+            \\
+        \end{spacing}
+        % TA Information
+        {
+            \noindent\fontsize{11}{11}
+            \selectfont\hspace{-3pt}\textbf{University of Arizona, Department of Computer Science \textendash}\hfill Winter 2022\hspace{3pt}\textendash\hspace{3pt}Present
+        }
+        \\
+        \textit{Undergraduate Teaching Assistant}
+        \\
+        \hspace{2pt}-\hspace{6pt}Serving as an undergraduate teaching assistant for Discrete Mathematics in Computer Science, providing academic support to students by hosting supplemental 
+                                instruction sessions and hosting weekly office hours.
+        \\
+        \hspace{2pt}-\hspace{6pt}Hosting weekly supplemental instruction sessions to provide students with additional opportunities to practice course concepts, ask questions, 
+                                and receive personalized feedback.
+        \\
+        \hspace{2pt}-\hspace{6pt}Collaborated with the course instructor and other teaching assistants to ensure consistency in teaching style, grading policies, and course content.
+        % Coursework Section
+        % Coursework Header
+        \begin{spacing}{0.2}
+            {
+                \noindent\fontsize{12}{12}
+                \\
+                \\
+                \selectfont\textbf{RELEVANT COURSEWORK}
+                \\
+            }
+            \rule{\linewidth}{0.4pt}
+            \\
+            \\
+            \\
+            \\
+            \\
+        \end{spacing}
+        \noindent
+        \begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+            Object-Oriented Programming and Design & Data Structures and Algorithms \\
+            Cloud Computing & Computer Organization \\
+            Database Design & Systems Programming \& UNIX \\
+            %Text Retrieval \& Web Search & Software Development \\
+        \end{tabular}
+    }
+\end{document}
