@@ -25,7 +25,8 @@ nav {
 .sorting-options {
 	flex : 1;
 	text-align : center;
-	transform : translateX(-5%);
+	justify-content : space-between;
+	content-align : center;
 }
 
 .sorting-options ul li {

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" content="with=device-width, initial-scale=1.0"></meta>
 	<title>David McLain - Projects</title>
-	<link rel="shortcut icon" href="bin/logo_64x64.png"></link>
+	<link rel="shortcut icon" href="images/logo_64x64.png"></link>
 	<link rel="stylesheet" href="index.css"></link>
 	<link rel="stylesheet" href="projects.css"></link>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,20 +14,89 @@
 	<section class="main">
 		<!--nav bar items-->
 		<nav>
-			<a href="index.html"><img src="bin/logo_128x128.png"></img></a>
+			<a href="index.html"><img src="images/logo_128x128.png"></img></a>
 			<!--Redirect links-->
 			<div class="nav-links">
 				<ul>
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="bin/resume.pdf">RESUME</a></li>
-					<li><a href="https://www.github.com/david-mclain">GITHUB</a></li>
-					<li><a href="https://www.linkedin.com/in/david-mclain-5669251b5/">LINKEDIN</a></li>
+					<li><a href="http://davidm.codes/images/resume.pdf" target="_blank">RESUME</a></li>
+					<li><a href="https://www.github.com/david-mclain" target="_blank">GITHUB</a></li>
+					<li><a href="https://www.linkedin.com/in/mclain-david/" target="_blank">LINKEDIN</a></li>
 					<li><a href="mailto:davidmclain@arizona.edu">CONTACT</a></li>
 					<li><a href="projects.html">PROJECTS</a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="projects">
+			<h1>Chess Game – Fall 2022</h1>
+			<hr>
+			<p>
+				Managed a team of four in coordinating sprint meet times and work distribution for developing a GUI based Chess Game.
+				Developed in Java using many different Object-Oriented Programming Principles and software development design patterns.
+				Game processed user inputs by mouse and used sockets to communicate to a server for an online game.
+				Implemented in Java using Swing and AWT libraries.
+			</p>
+			<br>
+			<h3>Chess Slideshow</h3>
+			<div class="slides-container">
+				<div class="slides-chess">
+					<div class="number">
+						1 / 6
+					</div>
+					<img src="images/chess_starting_board.png"></img>
+					<div class="text">
+						Displays board when first created in competitive mode
+					</div>
+				</div>
+				<div class="slides-chess">
+					<div class="number">
+						2 / 6
+					</div>
+					<img src="images/highlight_valid_moves.png"></img>
+					<div class="text">
+						Displays highlighting valid moves for selected piece
+					</div>
+				</div>
+				<div class="slides-chess">
+					<div class="number">
+						3 / 6
+					</div>
+					<img src="images/valid_move_capture.png"></img>
+					<div class="text">
+						Displays capturing as possible move if piece allows
+					</div>
+				</div>
+				<div class="slides-chess">
+					<div class="number">
+						4 / 6
+					</div>
+					<img src="images/en_passant_possible.png"></img>
+					<div class="text">
+						Displays en passant possible if opposing pawn moved 2
+					</div>
+				</div>
+				<div class="slides-chess">
+					<div class="number">
+						5 / 6
+					</div>
+					<img src="images/highlight_checking_piece.png"></img>
+					<div class="text">
+						Displays checking piece gets highlighted
+					</div>
+				</div>
+				<div class="slides-chess">
+					<div class="number">
+						6 / 6
+					</div>
+					<img src="images/checkmate_screen.png"></img>
+					<div class="text">
+						Displays when checkmate occurs game ends and winner is shown
+					</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
 			<h1>REST API – Fall 2021</h1>
 			<hr>
 			<p>
@@ -35,14 +104,6 @@
 				then display JSON with that information. Website contained cgi script such that when a POST request was recieved, 
 				a new AWS ec2 instance would be instantiated for client, which would then run bash script to install everything necessary to start a Minecraft server.
 				Server would then be added to the database and be displayed in the API. Scripting for API was done in python and javascript.
-			</p>
-			<h1>Chess Game – Fall 2022</h1>
-			<hr>
-			<p>
-				Managed a team of four in coordinating sprint meet times and work distribution for developing a GUI based Chess Game.
-				Developed in Java using many different Object-Oriented Programming Principles and software development design patterns.
-				Game processed user inputs by mouse and used sockets to communicate to a server for an online game. 
-				Implemented in Java using Swing and AWT libraries.
 			</p>
 			<h1>What You See is What You Get Text Editor – Fall 2022</h1>
 			<hr>
@@ -57,17 +118,18 @@
 				Coded a 32-bit single-cycle CPU simulation using MIPS instruction set. Allows most basic instructions (e.g beq, add, etc...) to be executed. 
 				Implemented in C using functional programming.
 			</p>
-			<h1>Sorting Algorithm Visualizer</h1>
+			<h1>Sorting Algorithm Visualizer – Fall 2022</h1>
 			<hr>
 			<p>
-				Developed a sorting algorithm visualizer, which displayed bars representing array values. Depending on which sorting algorithm was picked by the user, 
-				the visualizer would then display the order in which comparisons and swaps are done. You can find that <a href="SortingVisualization.html">here</a>.
+				Developed a sorting algorithm visualizer which displayed bars representing array values. Depending on which sorting algorithm was picked by the user, 
+				the visualizer would then animate the sorting algorithm process. You can find that <a href="SortingVisualization.html">here</a>.
 			</p>
 		</div>
 		<div class="location">
-			<p>You can find the source code to all of my projects on my <a href="https://github.com/david-mclain">github.</a></p>
+			<p>You can find the source code to all of my projects on my <a href="https://github.com/david-mclain" target="_blank">github.</a></p>
 			<hr>
 		</div>
 	</section>
 </body>
+<script src="projects.js"></script>
 </html>

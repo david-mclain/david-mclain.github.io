@@ -1,18 +1,25 @@
 .projects {
-	width : 60%;
+	width : 70%;
 	color : #fff;
 	position : relative;
-	margin-left : 100px;
+	margin-right : auto;
+	margin-left : auto;
 }
 
 .projects h1 {
-	font-size : 35px;
-	text-align : left;
+	font-size : 25px;
+	text-align : center;
+}
+
+.projects h3 {
+	font-size : 20px;
+	text-align : center;
 }
 
 .projects hr {
-	margin : auto:
 	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
 }
 
 .projects p {
@@ -23,17 +30,106 @@
 
 .location {
 	color : #fff;
+	width : 70%;
 	position : relative;
-	margin-left : 100px;
+	margin-left : auto;
+	margin-right : auto;
 }
 
 .location hr {
-	position : relative;
-	width : 40%;
+	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
 }
 
 .location p {
 	margin : 30px 0 5px;
 	font-size : 25px;
-	text-align : left;
+	text-align : center;
+}
+
+.slides-container {
+	position : relative;
+	max-width : 1000px;
+	max-height : 650px;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.slides-chess {
+	display : none;
+}
+
+.slides-container img {
+	max-width : 1000px;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+.prev, .next {
+	cursor : pointer;
+	position : absolute;
+	top : 50%;
+	width : auto;
+	margin-top: -22px;
+	margin-left : auto;
+	margin-right : auto;
+	padding : 16px;
+	color : black;
+	font-weight : bold;
+	font-size : 18px;
+	transition : 0.6s ease;
+	border-radius : 0 3px 3px 0;
+}
+
+.next {
+	right : 0;
+	border-radius : 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color : rgba(0,0,0,0.8);
+}
+
+.text {
+	color : #000;
+	font-size : 30px;
+	background : #fff;
+	position : absolute;
+	bottom : 0px;
+	width : 100%;
+	text-align : center;
+}
+
+.number {
+	color : #000;
+	font-size : 20px;
+	padding : 8px 12px;
+	position : absolute;
+	top : 0;
+}
+
+.dot {
+	cursor : pointer;
+	height : 15px;
+	width : 15px;
+	margin : 0 2px;
+	background-color : #bbb;
+	border-radius : 50%;
+	display : inline-block;
+	transition : background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color : #717171;
+}
+
+.fade {
+	animation-name : fade;
+	animation-duration : 1.5s;
+}
+
+@keyframes fade {
+	from {opacity : .4}
+	to {opacity : 1}
 }

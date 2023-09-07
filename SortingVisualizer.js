@@ -1,6 +1,8 @@
 var arr = []
 const container = document.querySelector(".bars-container");
-
+/**
+ * Initializes arrays default values
+ */
 async function initialize() {
 	for (let i = 0; i < 200; i++) {
 		const val = randomNumber(5, 400);
@@ -16,11 +18,15 @@ async function initialize() {
 		arr.push(val);
 	}
 }
-
+/**
+ * Returns a random number between the range of i and j
+ */
 function randomNumber(i, j) {
 	return Math.floor(Math.random() * (j - i + 1) + i);
 }
-
+/**
+ * Performs merge sort algorithm, then displays animations of what algorithm did
+ */
 async function mergeSort() {
 	var bars = document.querySelectorAll(".bar");
 	var auxArray = arr.slice();
@@ -28,7 +34,9 @@ async function mergeSort() {
 	mergeSortAuxiliary(arr, 0, arr.length - 1, auxArray, animations);
 	animate(animations, bars);
 }
-
+/**
+ * Merge sort auxiliary function for recursive calls on both sides
+ */
 function mergeSortAuxiliary(array, left, right, auxArray, animations) {
 	if (left >= right) {
 		return;
@@ -38,7 +46,9 @@ function mergeSortAuxiliary(array, left, right, auxArray, animations) {
 	mergeSortAuxiliary(auxArray, m + 1, right, array, animations);
 	merge(array, left, m, right, auxArray, animations);
 }
-
+/**
+ * Merges two subarrays together, adds what needs to be animated to animations array
+ */
 function merge(array, left, mid, right, auxArray, animations) {
 	let k = left;
 	let i = left;
@@ -68,7 +78,9 @@ function merge(array, left, mid, right, auxArray, animations) {
 		array[k++] = auxArray[j++];
 	}
 }
-
+/**
+ * Performs three way quicksort algorithm, then displays animations of what algorithm did
+ */
 async function threeWayQuick() {
 	var bars = document.querySelectorAll(".bar");
 	var animations = [];
@@ -78,7 +90,9 @@ async function threeWayQuick() {
 	pivot(arr, 0, arr.length - 1, animations);
 	animate(animations, bars);
 }
-
+/**
+ * Pivots array around a random number, adds what needs to be animated to animations array
+ */
 function pivot(arr, i, j, animations) {
 	if (i >= j || i < 0 || i >= arr.length || j >= arr.length) {
 		return;
@@ -109,7 +123,9 @@ function pivot(arr, i, j, animations) {
 	pivot(arr, i, p - 1, animations);
 	pivot(arr, f, j, animations);
 }
-
+/**
+ * Performs heap sort algorithm, then displays animations of what algorithm did
+ */
 async function heapSort() {
 	var bars = document.querySelectorAll(".bar");
 	var animations = [];
@@ -127,7 +143,9 @@ async function heapSort() {
 	}
 	animate(animations, bars);
 }
-
+/**
+ * Sinks element to position in heap, adds what needs to be animated to animations array
+ */
 function sink(arr, last, i, animations) {
 	let max = i;
 	let l = 2 * i + 1;
@@ -154,13 +172,17 @@ function sink(arr, last, i, animations) {
 		sink(arr, last, max, animations);
 	}
 }
-
+/**
+ * Swaps elements in array at positions i and j
+ */
 function swap(arr, i, j) {
 	let temp = arr[i];
 	arr[i] = arr[j];
 	arr[j] = temp;
 }
-
+/**
+ * Test function, returns true if array is sorted and false otherwise
+ */
 function isSorted(arr) {
 	for (let i = 0; i < arr.length - 1; i++) {
 		if (arr[i + 1] < arr[i]) {
@@ -169,7 +191,9 @@ function isSorted(arr) {
 	}
 	return true;
 }
-
+/**
+ * Animates bars to demonstrate sorting process of whatever algorithm was chosen
+ */
 async function animate(animations, bars) {
 	for (let i = 0; i < animations.length; i++) {
 		let cur = animations[i];
@@ -192,7 +216,9 @@ async function animate(animations, bars) {
 		}
 	}
 }
-
+/**
+ * Generates a new array (refreshes window)
+ */
 function generate() {
 	window.location.reload();
 }
